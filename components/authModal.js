@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import GoogleButton from './googleButton';
 import GitHubButton from './githubButton';
-import firebase from 'firebase/app';
-import 'firebase/auth';
+import { auth } from '../firebaseClient';
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 
 
 const AuthModal = ({ setShowAuthModal }) => {
@@ -19,8 +19,8 @@ const AuthModal = ({ setShowAuthModal }) => {
 
   const handleGoogleSignIn = async () => {
     try {
-      const provider = new firebase.auth.GoogleAuthProvider();
-      const result = await firebase.auth().signInWithPopup(provider);
+      const provider = new GoogleAuthProvider();
+      const result = await signInWithPopup(auth, provider);
       const user = result.user;
       console.log('User signed in:', user);
     } catch (error) {
