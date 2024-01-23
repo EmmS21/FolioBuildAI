@@ -1,8 +1,7 @@
-import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image"
 import { Disclosure } from "@headlessui/react";
-import { Button } from "@mui/material/Button";
+import Button from '@mui/material/Button';
 
 const Navbar = ({ setShowAuthModal }) => {
 
@@ -14,7 +13,6 @@ const Navbar = ({ setShowAuthModal }) => {
           {({ open }) => (
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
-                <Link href="/">
                       <Image
                         src="/img/logo.svg"
                         alt="N"
@@ -22,7 +20,6 @@ const Navbar = ({ setShowAuthModal }) => {
                         height="32"
                         className="w-8"
                       />
-                </Link>
                 <Disclosure.Button
                   aria-label="Toggle Menu"
                   className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700">
@@ -48,7 +45,7 @@ const Navbar = ({ setShowAuthModal }) => {
 
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   <>
-                    <Button  className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
+                    <Button className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
                       onClick={()=> setShowAuthModal(true)}
                     >Start Building</Button>
                   </>
@@ -59,9 +56,9 @@ const Navbar = ({ setShowAuthModal }) => {
         </Disclosure>
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          <Link href="/" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
+          <Button className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
             onClick={() => setShowAuthModal(true)}
-          >Start Building</Link>
+          >Start Building</Button>
           <ThemeChanger />
         </div>
       </nav>
