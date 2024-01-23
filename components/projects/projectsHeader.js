@@ -20,9 +20,7 @@ const ProjectsHeader = ({ currCat }) => {
         <h1>{currCat}</h1>
         <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
           <Link href="/dashboard" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
-            >
-                Back to Dashboard
-          </Link>
+            >Back to Dashboard</Link>
           <button
             onClick={handleSignOut}
             className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
