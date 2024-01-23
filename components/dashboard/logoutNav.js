@@ -1,7 +1,7 @@
-import Link from "next/link";
 import ThemeChanger from "../DarkSwitch";
 import Image from "next/image"
 import { Disclosure } from "@headlessui/react";
+import Button from '@mui/material/Button';
 
 const LogoutNavBar = ({ setShowAuthModal }) => {
 
@@ -12,7 +12,6 @@ const LogoutNavBar = ({ setShowAuthModal }) => {
           {({ open }) => (
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
-                <Link href="/">
                       <Image
                         src="/img/logo.svg"
                         alt="N"
@@ -20,7 +19,6 @@ const LogoutNavBar = ({ setShowAuthModal }) => {
                         height="32"
                         className="w-8"
                       />
-                </Link>
 
                 <Disclosure.Button
                   aria-label="Toggle Menu"
@@ -47,9 +45,9 @@ const LogoutNavBar = ({ setShowAuthModal }) => {
 
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   <>
-                    <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
+                    <Button className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
                       onClick={()=> setShowAuthModal(true)}
-                    >Start Building</Link>
+                    >Start Building</Button>
                   </>
                 </Disclosure.Panel>
               </div>
@@ -58,8 +56,8 @@ const LogoutNavBar = ({ setShowAuthModal }) => {
         </Disclosure>
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          <Link href="/" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
-          >Log Out</Link>
+          <Button href="/" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
+          >Log Out</Button>
           <ThemeChanger />
         </div>
       </nav>
