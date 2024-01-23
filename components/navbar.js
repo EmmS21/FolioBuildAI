@@ -2,6 +2,7 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image"
 import { Disclosure } from "@headlessui/react";
+import { Button } from "@mui/material/Button";
 
 const Navbar = ({ setShowAuthModal }) => {
 
@@ -22,7 +23,6 @@ const Navbar = ({ setShowAuthModal }) => {
                         className="w-8"
                       />
                 </Link>
-
                 <Disclosure.Button
                   aria-label="Toggle Menu"
                   className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700">
@@ -48,9 +48,9 @@ const Navbar = ({ setShowAuthModal }) => {
 
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   <>
-                    <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
+                    <Button  className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
                       onClick={()=> setShowAuthModal(true)}
-                    >Start Building</Link>
+                    >Start Building</Button>
                   </>
                 </Disclosure.Panel>
               </div>
