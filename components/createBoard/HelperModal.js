@@ -58,14 +58,14 @@ const HelperModalComponent = ({ open, setOpen, projectData, setSnackbarOpen }) =
     const handleFinish = async () => {
         if (projectData && projectData.length > 0) {
             // Create Workspace
-            await axios.post('https://49e5-67-85-184-108.ngrok-free.app/api/taskade', {
+            await axios.post('https://folio-build-ai.vercel.app/api/taskade', {
                 type: 'createWorkspace',
                 data: { name: workspace },
                 apiKey
             });
     
             // Get Workspaces and Find Created Workspace ID
-            const workspacesResponse = await axios.post('https://49e5-67-85-184-108.ngrok-free.app/api/taskade', {
+            const workspacesResponse = await axios.post('https://folio-build-ai.vercel.app/api/taskade', {
                 type: 'getWorkspaces',
                 apiKey
             });
@@ -78,7 +78,7 @@ const HelperModalComponent = ({ open, setOpen, projectData, setSnackbarOpen }) =
                 for (const data of projectData) {
                     const title = data.project_title;
                     const description = formatCardDescription(data);
-                    await axios.post('https://49e5-67-85-184-108.ngrok-free.app/api/taskade', {
+                    await axios.post('https://folio-build-ai.vercel.app/api/taskade', {
                         type: 'createProject',
                         workspaceId,
                         data: {
@@ -260,6 +260,3 @@ const HelperModalComponent = ({ open, setOpen, projectData, setSnackbarOpen }) =
 }
 
 export default HelperModalComponent;
-
-
-// Link 1 https://trello.com/power-ups/admin
