@@ -8,6 +8,7 @@ import {
 } from "firebase/auth"
 
 export const signInWithGoogle = async () => {
+    console.log('signInWithGoogle')
     try {
         const provider = new GoogleAuthProvider();
         await signInWithRedirect(auth, provider);
