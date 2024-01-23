@@ -1,0 +1,12 @@
+{
+    "categories": {
+        "FinTech": "Improve and modernize financial processes",
+        "CleanTech": "Sustainability and environmentally friendly solutions",
+        "EdTech": "Improve and modernize education and learning experiences",
+        "SportsTech": "Optimize Performance, analytics and experiences in sporting",
+        "HealthTech": "Improve and modernize healthcare and fitness services and outcomes",
+        "Other/AI": "Using AI to solve a variety of real world problems",
+        "PropTech" : "Improve and modernize processes related to the management of property",
+        "LegalTech": "Improve and modernize legal processes"
+    }
+}

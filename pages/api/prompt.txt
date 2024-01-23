@@ -1,0 +1,23 @@
+I am learning how to code, I have about a 6months-two years worth of experience learning on my own.
+
+I would like to build a project for my portfolio. I want this project to be non-generic, by this, I mean I don't want to build a todo list (this is generic, doesn't solve any real world problems and will not help me stand out as a candidate).
+
+I would ideally like to build a project I can treat like a product, in the sense that it solves a real world problem, is something companies would find interesting enough to stand out in a sea of applications and is something I can test with live users.
+
+Please generate a project idea for me in the fintech space that would be easy enough for me to complete within a month, return only a one-liner of the project idea.
+
+In coming up with a project prioritize:
+- novelty: does this solve a problem in a way that is unique and could actually be of enough value to receive paying users
+- saturated: avoid ideas that are common, this will not help me stand out (e.g an expense tracker and cryptocurrency portfolio trackers are all example of very common projects). Think about the entire fintech space and identify problems that do not have an abundance of pre-existing solutions. 
+- market relevance: prioritize an idea that is likely to help me stand out to recruiters and developers operating in the space I mentioned
+- practicality: the product must be practical and something I can ideally use in everyday life (or a group of people can use)
+
+Lean towards ideas that aren't overly complicated, I believe the most value often comes from the most simple things
+
+Expected output
+
+I expect the output to be once sentence in this format:
+
+[Project Idea]: [Very short description]
+
+Do not include any of these:

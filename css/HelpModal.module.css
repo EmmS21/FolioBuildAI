@@ -1,0 +1,12 @@
+.inputStyle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.linkStyle {
+  display: block;
+  background-color: #f5f5f5;
+  padding: 8px;
+  border-radius: 4px;
+  word-break: break-all;
+}
