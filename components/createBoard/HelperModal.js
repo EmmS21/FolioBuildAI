@@ -167,13 +167,6 @@ const HelperModalComponent = ({ open, setOpen, projectData, setSnackbarOpen }) =
                         activeStep === 1 && (
                             <div>
                                 <p>Click Finish to complete the process </p>
-                                <input
-                                    type="text"
-                                    value={workspace}
-                                    onChange={handleWorkSpaceChange}
-                                    placeholder='Enter a workspace name'
-                                    className={styles.inputStyle}
-                                />
                             </div>
                         )
                     }
